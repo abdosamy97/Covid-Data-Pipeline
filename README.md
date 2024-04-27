@@ -1,4 +1,4 @@
-# Covid-Data-Pipeline
+# Covid-Data-Analysis
 
 ## Overview
 This project focuses on analyzing COVID-19 data using Cloudera, Hive, Oozie, and Power BI. We'll cover data ingestion, transformation, visualization, and reporting.
@@ -46,9 +46,37 @@ This project focuses on analyzing COVID-19 data using Cloudera, Hive, Oozie, and
 8. **Transfer Data to Your PC**:
    - Use WinSCP to transfer the data file from Cloudera VM to your PC.
 
+
+
 9. **Power BI Visualization**:
    - Create visualizations in Power BI based on the technical and business requirements.
    - Consider using "Line & Stacked Column Charts" to show the relationship between tests and deaths.
 
 10. **Dashboard Screenshot**:
     - Capture a screenshot of your completed dashboard and save it as "dashboard.png."
+
+
+## Files
+
+### Dataset
+- **covid-19.csv**: The original dataset containing COVID-19 data.
+- **Covid_results_final.csv**: The processed data after applying transformations.
+
+### Scripts
+- **Load_COVID_TO_HDFS.sh**: A Linux shell script for loading data into HDFS.
+- **covid_data_preparation.hql**: HQL scripts for creating Hive tables and processing data.
+
+### Visualization
+- **covid_final_VIZ.pbix**: Power BI file for creating visualizations based on the technical and business requirements.
+
+## Challenges Faced
+
+1. **Tools Setup**:
+   - Setting up Cloudera VM and related tools posed challenges. I had to rely on online resources, search, and video tutorials to troubleshoot issues and ensure everything worked correctly.
+
+2. **Memory Constraints**:
+   - While running the Hive script, I encountered memory limitations. To address this, I broke down the large INSERT queries into smaller queries, each handling data for 30 countries.
+
+## Project result
+![GitHub Logo](https://github.com/abdosamy97/Covid-Data-Pipeline/blob/main/dashboard.png)
+
